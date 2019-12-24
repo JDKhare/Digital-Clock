@@ -1,2 +1,2 @@
 # Digital-Clock
- My first project to create a beautiful Digital Clock.
+ If your laptop doesn't have clock, I'm here to save you.
