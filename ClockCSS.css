@@ -1,0 +1,51 @@
+body{
+    background: #000000;
+}
+.clock{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-size: 100px;
+    font-weight: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    padding:10px;
+    background: linear-gradient(90deg, #03a9f4, #e73d9d, #f1c123, #03a9f4 );
+    background-size: 400%;
+    border-radius: 60px;
+    text-align: center;
+    z-index: 1;
+}
+.clock:hover{
+animation: animate 20s linear infinite;
+}
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+.clock:before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #e73d9d, #f1c123, #03a9f4 );
+    background-size: 400%;
+    border-radius: 60px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.clock:hover:before{
+    filter: blur(25px);
+    opacity: 1;
+    animation: animate 20s linear infinite;
+}
