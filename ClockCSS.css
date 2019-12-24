@@ -45,7 +45,7 @@ animation: animate 20s linear infinite;
 }
 
 .clock:hover:before{
-    filter: blur(25px);
+    filter: blur(40px);
     opacity: 1;
     animation: animate 20s linear infinite;
 }
